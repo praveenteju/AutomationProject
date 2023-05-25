@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="3" name="Test">
+		<!-- <classes>
+			<class name="com.qt.stepdefinitios.TestCases" />
+		<class name="com.qt.stepdefinitios.TestNGAnnotation" />
+			<class
+		name="com.qt.stepdefinitios.TestNGAnnotations" />
+		</classes> -->
+		<listeners>
+			<listener class-name="com.qt.framework.Listeners" />
+		</listeners>
+
+		<packages>
+			<package name="com.qt.stepdefinitios" />
+		</packages>
+		<groups>
+			<run>
+				<include name="ParameterConcept" />
+			</run>
+		</groups>
+	</test>
+</suite> <!--
+Suite -->
